@@ -6,6 +6,7 @@ public class EnemyFollow : MonoBehaviour
 {
     [SerializeField] private float speed;
     [SerializeField] private float stopDistance;
+    [SerializeField] private AnimationControll animControll;
 
     private Transform target;
 
@@ -20,7 +21,26 @@ public class EnemyFollow : MonoBehaviour
     {
         if(Vector2.Distance(transform.position, target.position) > stopDistance)
         {
+            // anda
             transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+            animControll.PlayAnim(0);
+        }
+        else
+        {
+            // para
+            animControll.PlayAnim(1);
+        }
+
+        Debug.Log(target.transform.position.x - transform.position.x);
+        float posX = target.transform.position.x - transform.position.x;
+
+        if(posX > 0)
+        {
+            transform.eulerAngles = new Vector2(0, 0);
+        }
+        else
+        {
+            transform.eulerAngles = new Vector2(0, 180);
         }
     }
 }
