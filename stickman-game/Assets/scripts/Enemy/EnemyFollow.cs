@@ -31,7 +31,7 @@ public class EnemyFollow : MonoBehaviour
             animControll.PlayAnim(1);
         }
 
-        Debug.Log(target.transform.position.x - transform.position.x);
+        //Debug.Log(target.transform.position.x - transform.position.x);
         float posX = target.transform.position.x - transform.position.x;
 
         if(posX > 0)
