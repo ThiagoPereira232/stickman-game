@@ -479,6 +479,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 13.86}
   m_EdgeRadius: 0
+--- !u!4 &1345294136 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 640817241288850593, guid: 1139ffe3089423c46a178909e1410725, type: 3}
+  m_PrefabInstance: {fileID: 7450691295013329381}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1603191342
 GameObject:
   m_ObjectHideFlags: 0
@@ -793,6 +798,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4050182085115195763, guid: 1ec096bf356f5be4d8c022f7d35dc9b6, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4050182085115195767, guid: 1ec096bf356f5be4d8c022f7d35dc9b6, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -846,6 +855,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 640817241288850593, guid: 1139ffe3089423c46a178909e1410725, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 640817241288850593, guid: 1139ffe3089423c46a178909e1410725, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 2036615891624795792, guid: 1139ffe3089423c46a178909e1410725, type: 3}
+      propertyPath: radius
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2036615891624795792, guid: 1139ffe3089423c46a178909e1410725, type: 3}
+      propertyPath: attackPoint
+      value: 
+      objectReference: {fileID: 1345294136}
+    - target: {fileID: 2036615891624795792, guid: 1139ffe3089423c46a178909e1410725, type: 3}
+      propertyPath: layerPlayer.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7450691295172160038, guid: 1139ffe3089423c46a178909e1410725, type: 3}
       propertyPath: m_Name
       value: Enemy
