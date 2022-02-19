@@ -10,10 +10,13 @@ public class AnimationControll : MonoBehaviour
     [SerializeField] private float radius;
     [SerializeField] private LayerMask layerPlayer;
 
+    private PlayerAnim player;
+
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
+        player = FindObjectOfType<PlayerAnim>();
     }
 
     // Update is called once per frame
@@ -35,6 +38,7 @@ public class AnimationControll : MonoBehaviour
         {
             // detecta colisão com player
             Debug.Log("bateu no player");
+            player.OnHit();
         }
         else
         {
